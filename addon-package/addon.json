@@ -1,0 +1,40 @@
+{
+  "manifestVersion": "1.0",
+  "storeListing": {
+    "distributionCountries": ["US"],
+    "locales": {
+      "en-US": {
+        "default": "DEFAULT",
+        "name": { "value": "Routine Doctor" },
+        "shortDescription": "Explain smart home routine failures and validate fixes with replay.",
+        "fullDescription": "Routine Doctor helps homeowners and developers understand what broke, when, and why in smart home routines, then applies fixes and replays scenarios to confirm resolution.",
+        "examplePhrases": [
+          "Debug my porch light routine",
+          "Why didn’t my light turn on?",
+          "Replay that automation failure"
+        ],
+        "privacyAndCompliance": {
+          "privacyPolicyUrl": "https://example.com/privacy",
+          "termsOfUseUrl": "https://example.com/terms"
+        },
+        "mediaAssets": {
+          "icons": { "light": [], "dark": [] },
+          "carouselImages": [
+            { "uri": "https://example.com/carousel-1.png", "altText": "Routine Doctor timeline and workflow graph", "size": "600x900" }
+          ],
+          "bannerImages": []
+        }
+      }
+    }
+  },
+  "integrations": [
+    {
+      "type": "MCP",
+      "config": {
+        "endpoints": {
+          "default": { "type": "HTTPS", "uri": "https://YOUR_MCP_SERVER_URL" }
+        }
+      }
+    }
+  ]
+}
